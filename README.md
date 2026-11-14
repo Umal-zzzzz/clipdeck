@@ -14,7 +14,7 @@ ClipDeck keeps your recent copied text and images available from the menu bar. O
 
 ## Download
 
-Download the latest DMG from [GitHub Releases](https://github.com/Umal-zzzzz/clipdeck/releases/latest).
+Download the latest DMG from [GitHub Releases](https://github.com/Umal-zzzzz/clipdeck/releases).
 
 The current release is built for Apple Silicon. Intel support will require an Intel build.
 
