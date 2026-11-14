@@ -72,7 +72,7 @@ Check the Accessibility and Automation permissions above, then restart ClipDeck.
 
 ### The app does not open after downloading
 
-Use Control-click → **Open** once, or choose **Open Anyway** in **System Settings → Privacy & Security**. This is common for unsigned preview builds downloaded from GitHub.
+Use Control-click → **Open** once, or choose **Open Anyway** in **System Settings → Privacy & Security**. This is common for ad-hoc-signed, non-notarized preview builds downloaded from GitHub.
 
 ## For contributors
 
