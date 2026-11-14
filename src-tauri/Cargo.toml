@@ -1,0 +1,28 @@
+[package]
+name = "clipdeck"
+version = "0.1.0"
+description = "A local-first macOS clipboard history palette"
+authors = ["ClipDeck contributors"]
+edition = "2021"
+
+[lib]
+name = "clipdeck_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-autostart = "2"
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+base64 = "0.22"
+sha2 = "0.10"
+image = { version = "0.25", default-features = false, features = ["png", "tiff"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6.5"
+objc2-app-kit = { version = "0.3.2", features = ["NSPasteboard", "NSWorkspace", "NSRunningApplication", "libc"] }
+objc2-foundation = "0.3.2"
